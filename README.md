@@ -1,5 +1,11 @@
 # nlsparql-wfst
 The goal of the project is to develop Spoken Language Understanding (SLU) Module for Movie Domain using NL-SPARQL Dataset.
+### Data Analysis
+Some previous data analysis on the dataset has been done. In the data-analysis folder some scripts can be found.
+* concept-distribution.py has been used to look at the concept distribution in a fast way to find insights
+* oov.py has been used to calculate the percentage of out-of-vocabulary concepts
+* zipf.py has been used to test the Zipf's law
+**Note:** the results of concept-distribution are stored into a csv file called results.csv. It is due to the fact that create a readable graph with matplotlib can be difficult and doing it with Excel or Numbers or whatever is easier and faster 
 ### Models
 Two models have been developed: a basic model that ---- and an advanced model that ----. The model is automatically selected by _main.py_. To run the basic model, three parameters are needed:
 1. the feature. It varies among 'word','pos','lemma'
