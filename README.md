@@ -5,7 +5,9 @@ Two models have been developed: a basic model that ---- and an advanced model th
 1. the feature. It varies among 'word','pos','lemma'
 2. the ngram order. An integer number
 3. the ngram method. It varies among 'witten_bell','absolute','katz','kneser_ney','presmoothed','unsmoothed'
+
 To run the advanced model, four parameters are needed:
+
 1. the feature. It varies among 'word','pos','lemma'
 2. the ngram order. An integer number
 3. the ngram method. It varies among 'witten_bell','absolute','katz','kneser_ney','presmoothed','unsmoothed'
