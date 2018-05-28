@@ -1,5 +1,26 @@
 # nlsparql-wfst
 The goal of the project is to develop Spoken Language Understanding (SLU) Module for Movie Domain using NL-SPARQL Dataset.
+### Models
+Two models have been developed: a basic model that ---- and an advanced model that ----. The model is automatically selected by _main.py_. To run the basic model, three parameters are needed:
+1. the feature. It varies among 'word','pos','lemma'
+2. the ngram order. An integer number
+3. the ngram method. It varies among 'witten_bell','absolute','katz','kneser_ney','presmoothed','unsmoothed'
+To run the advanced model, four parameters are needed:
+1. the feature. It varies among 'word','pos','lemma'
+2. the ngram order. An integer number
+3. the ngram method. It varies among 'witten_bell','absolute','katz','kneser_ney','presmoothed','unsmoothed'
+4. the advanced feature. It varies among 'word','pos','lemma'
+
+To run the basic model, open a console, cd to wfst and launch
+```
+python main.py <feature> <ngram-order> <method>
+```
+for the basic model or
+```
+python main.py <feature> <ngram-order> <method> <advanced_feature>
+```
+for the advanced model.
+
 ### Dataset
 The dataset can be found in `wfst/dataset`.
 
@@ -13,6 +34,7 @@ It is the entry point. Once the user runs this script, all the other files are c
 1. the feature. It varies among 'word','pos','lemma'
 2. the ngram order. An integer number
 3. the ngram method. It varies among 'witten_bell','absolute','katz','kneser_ney','presmoothed','unsmoothed'
+4. the advanced feature (**optional**). It varies among 'word','pos','lemma'
 The pipeline followed by `main.py` is this:
 ![](github-images/general-pipeline.png "")
 
